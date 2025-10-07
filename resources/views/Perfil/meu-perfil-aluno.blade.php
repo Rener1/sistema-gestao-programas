@@ -37,11 +37,11 @@
                     @endif
 
                     <!-- @if ($aluno->name_social != null)
-                            <div style="display: flex; flex-direction: column;">
-                            <label style="display: flex; flex-direction: column; align-items: flex-start; gap: 8px; color: var(--preto-p-100, #6B6B6B); font-family: Inter; font-size: 14px; font-style: normal; font-weight: 500; line-height: normal; margin-top: 8px;">Nome completo</label>
-                            <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 8px; color: var(--preto-p-200, #2B2B2B); font-family: Inter; font-size: 16px; font-style: normal; font-weight: 700; line-height: normal;">{{ $aluno->name_social }} </div>
-                            </div>
-                            @endif -->
+            <div style="display: flex; flex-direction: column;">
+                                        <label style="display: flex; flex-direction: column; align-items: flex-start; gap: 8px; color: var(--preto-p-100, #6B6B6B); font-family: Inter; font-size: 14px; font-style: normal; font-weight: 500; line-height: normal; margin-top: 8px;">Nome completo</label>
+                                        <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 8px; color: var(--preto-p-200, #2B2B2B); font-family: Inter; font-size: 16px; font-style: normal; font-weight: 700; line-height: normal;">{{ $aluno->name_social }} </div>
+                                        </div>
+            @endif -->
 
                     <br>
 
@@ -83,7 +83,6 @@
                                     {{ $aluno->semestre_entrada }} </div>
                             </div>
 
-                            @endif
                             <br>
                             <br>
                         </div>
@@ -95,7 +94,7 @@
                                 <img src="{{ asset('images/lapis-editarperfil.png') }}" style="width: 20px; height: 20px;"
                                     alt="Editar servidor"> Editar</a>
                         </div>
-                    @endauth
+                    @endrole
                 </div>
-            @endrole
-@endsection
+            @endauth
+        @endsection
